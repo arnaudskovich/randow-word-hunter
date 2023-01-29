@@ -74,7 +74,7 @@ lForm.addEventListener("submit", (e) => {
 		if (game._lives <= 0) {
 			lInput.disabled = true;
 			submit.disabled = true;
-			feedback.innerText = "Vous avez perdu !";
+			feedback.innerHTML = "Vous avez perdu ! <br/> Le mot était: " + game._word;
 			feedback.style.backgroundColor = "rgba(207, 2, 2, 0.651)";
 			return;
 		} else {
