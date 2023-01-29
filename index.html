@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+    <title>Random word hunter</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="top">
+            <div>
+                <h3 id="title">RANDOM WORD HUNTER GAME</h3>
+            </div>
+            <div id="found_letters">
+                <div class="letter">?</div>
+                <div class="letter">?</div>
+                <div class="letter">?</div>
+                <div class="letter">?</div>
+                <div class="letter">?</div>
+                <div class="letter">?</div>
+            </div>
+            <div id="life_status">
+                <div id="life">
+                    <img src="icons8-heart-48.png" alt="Chances"> <span id="life_count">8</span>
+                </div>
+                <div id="bad_letters" title="lettres non-valides"></div>
+            </div>
+        </div>
+        <div id="feedback">Entrez une lettre</div>
+        <form id="bottom">
+            <input type="text" name="letter" id="letter" pattern="^[a-zA-Z]$" placeholder="?" maxlength="1" required>
+            <button class="btn" id="submitBtn" type="submit">&#x2713;</button>
+        </form>
+        <div id="restart">
+            <button class="btn w-auto full-rounded" id="restartBtn" type="submit">&#x21bb; Nouveau mot</button>
+        </div>
+        <div id="note">
+            Les mots sont uniquement formés des lettres non-accentuées
+        </div>
+    </div>
+</body>
+
+</html>
