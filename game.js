@@ -22,7 +22,6 @@ class Game {
 			letters.push(toAdd);
 		}
 		this._word = letters.join("");
-		console.log(this._word);
 		return this._word;
 	}
 	hasLetterIn(letter) {
